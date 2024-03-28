@@ -104,13 +104,13 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'Students',
+          to: '/Students'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Students',
-          to: '/Students'
+          title: 'Product',
+          to: '/Product'
         }
       ],
       miniVariant: false,

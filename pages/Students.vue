@@ -26,9 +26,11 @@
     </div>
 
     <!-- Пагінація -->
-    <button @click="previousPage" :disabled="currentPage === 1">Попередня сторінка</button>
+
+    <button class="but_1" @click="previousPage" :disabled="currentPage === 1"><</button>
     <span>Сторінка {{ currentPage }} з {{ totalPages }}</span>
-    <button @click="nextPage" :disabled="currentPage === totalPages">Наступна сторінка</button>
+    <button class="but_2" @click="nextPage" :disabled="currentPage === totalPages">></button>
+
   </div>
 </template>
 
@@ -109,6 +111,16 @@ export default {
 </script>
 
 <style>
+.but_1{
+  background-color: red;
+  padding: 5px;
+  border: 1px solid grey;
+}
+.but_2{
+  background-color: green;
+  padding: 5px;
+  border: 1px solid grey;
+}
 table {
   width: 100%;
   border-collapse: collapse;
